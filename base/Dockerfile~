@@ -1,0 +1,17 @@
+FROM ubuntu:14.04
+
+MAINTAINER Michael Lovci <michaeltlovci@gmail.com>
+
+RUN apt-get update && apt-get install -q -y wget libglib2.0-0 libsm6 libx11-dev libxrender1 libfontconfig1 libxext6 gcc ftp build-essential zlibc zlib1g zlib1g-dev openssl libssl-dev mysql-server libmysqlclient-dev ghostscript zip emacs npm git curl libncurses5-dev default-jre default-jdk
+
+
+WORKDIR /root/software
+
+ADD http://repo.continuum.io/miniconda/Miniconda-3.7.0-Linux-x86_64.sh /root/software/
+
+RUN chmod u+x Miniconda-3.7.0-Linux-x86_64.sh && ./Miniconda-3.7.0-Linux-x86_64.sh -b -p /usr/local/miniconda -f && cd /usr/local/bin && ln -s /usr/local/miniconda/bin/* .
+RUN conda install --yes cython numpy scipy scikit-learn pip pandas ipython jinja2 tornado pyzmq matplotlib pyqt
+RUN pip install patsy && pip install seaborn brewer2mpl networkx semantic_version statsmodels flotilla htseq misopy pybedtools gffutils cutadapt
+
+ADD http://hgdownload.cse.ucsc.edu/admin/exe/userApps.v306.src.tgz /root/software/
+RUN tar xzvf userApps.v306.src.tgz && cd userApps && make && cd /usr/local/bin && ln -s ~/software/ucsc_tools/userApps/bin/* .
