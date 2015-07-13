@@ -36,7 +36,9 @@ will produce:
         intron2	20	41	ctgtgactg	1.82301608911	0.75	8	10	21	1.047049
         intron2	20	37	gactgactg	3.16203878284	0.78125	4	10	21	1.8346258
 
-##Usage: `SVM_bp.sh <filename <species (Hsap...)> <length>`
+##Usage: 
+
+`SVM_bp.sh <filename <species (Hsap...)> <length>`
 
 
 ---
