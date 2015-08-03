@@ -19,7 +19,7 @@ This repository repackages work from these wonderful people:
 
 ##Installation:
 
-  1. Add `SVM_bp.sh` to a place in $PATH
+  1. Add [`SVM_bp.sh`](https://raw.githubusercontent.com/mlovci/docker/master/svm_bpfinder/SVM_bp.sh) to a place in $PATH
   2. `docker pull mlovci/svm_bpfinder`
 
 ##Test:
