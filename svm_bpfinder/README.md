@@ -1,7 +1,7 @@
 #SVM_bpfinder
 
 
-A simple docker  wrapper for [SVM_bpfinder](http://regulatorygenomics.upf.edu/Software/SVM_BP/).
+A simple docker  wrapper for [`SVM_bpfinder`](http://regulatorygenomics.upf.edu/Software/SVM_BP/). `SVM_bpfinder` uses binaries from [`SVM_light`](http://svmlight.joachims.org/) to predict the location and quality of branch-point signals.
 
 
 ---
@@ -46,3 +46,7 @@ will produce:
 #For full documentation:
 
 See [SVM_bpfinder's README](http://regulatorygenomics.upf.edu/Software/SVM_BP/README) for full instructions
+
+#License
+
+Permission is granted for unrestricted academic use. Limitations are placed on the use of this container only where prohibited by the constituent packages. Contact the authors to obtain permission for non-academic uses: [`SVM_bpfinder`](http://regulatorygenomics.upf.edu/Software/SVM_BP/README) and [`SVM_light`](http://svmlight.joachims.org/)
