@@ -38,7 +38,7 @@ will produce:
 
 ##Usage: 
 
-`SVM_bp.sh <filename <species (Hsap...)> <length>`
+`SVM_bp.sh <filename> <species (i.e. Hsap)> <length>`
 
 
 ---
