@@ -13,6 +13,6 @@ RUN ["chmod", "u+x", "Miniconda3-latest-Linux-x86_64.sh"]
 RUN ./Miniconda3-latest-Linux-x86_64.sh -b -p /usr/local/miniconda -f
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/miniconda/bin
 RUN conda install --yes cython numpy scipy scikit-learn pip pandas ipython jinja2 tornado pyzmq matplotlib pyqt ipywidgets
-RUN pip install patsy && pip install seaborn brewer2mpl networkx semantic_version statsmodels pybedtools cutadapt pysam jsonschema
+RUN pip install patsy && pip install seaborn brewer2mpl networkx semantic_version statsmodels pybedtools cutadapt pysam jsonschema pytest sphinx numpydoc sphinx_bootstrap_theme biopython
 RUN conda config --add channels r && conda config --add channels bioconda
 ENV PATH=/usr/local/miniconda/bin:$PATH
