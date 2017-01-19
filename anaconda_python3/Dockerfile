@@ -3,7 +3,7 @@ FROM mlovci/base
 MAINTAINER Michael Lovci <michaeltlovci@gmail.com>
 
 
-RUN sudo apt-get update && sudo apt-get upgrade -y
+RUN apt-get update && apt-get upgrade -y
 
 ADD https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh /home/root/software/
 
